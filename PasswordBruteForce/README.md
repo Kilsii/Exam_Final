@@ -27,3 +27,9 @@ Key design — INDEX-BASED generation:
 -Independent from BruteForceGenerator:has no knowledge of how candidates are produced.
 -Receives a plain-text candidate, hashes it with the static salt, compares to target hash.
 -SHA256.HashData is thread-safe : multiple threads can call Validate() simultaneously.
+
+v0.4 | Added PerformanceLogger
+- Records timing results for single-thread and multi-thread runs.
+- LogSingleThread() and LogMultiThread() store elapsed milliseconds.
+- GetReport() generates a formatted comparison report with speedup ratio.
+- Clear() resets all stored results before each new attack.
