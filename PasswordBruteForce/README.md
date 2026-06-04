@@ -21,3 +21,9 @@ Key design — INDEX-BASED generation:
   Example (charset="abc", L=2):index 0 → "aa",  index 1 → "ab",  index 2 → "ac".
  -This lets the engine divide `[0, N^L]` into non-overlapping numeric ranges and hand
  one range to each thread enabling genuine parallel search with zero shared state between threads .
+
+ v0.3 | ADDED HashValidator
+-Validate candidate strings against a stored SHA-256 hash.
+-Independent from BruteForceGenerator:has no knowledge of how candidates are produced.
+-Receives a plain-text candidate, hashes it with the static salt, compares to target hash.
+-SHA256.HashData is thread-safe : multiple threads can call Validate() simultaneously.
