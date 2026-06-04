@@ -29,7 +29,7 @@ public class PasswordManager
     /// </summary>
     public static string HashPassword(string password)
     {
-        // Prepend salt before hashing — this is the same operation the validator will do
+        // Prepend salt before hashing
         byte[] data = Encoding.UTF8.GetBytes(SALT + password);
         byte[] hash = SHA256.HashData(data);          
         return Convert.ToBase64String(hash);
