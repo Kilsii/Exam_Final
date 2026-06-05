@@ -43,3 +43,9 @@ v0.5 | Added BruteForceEngine
 - Interlocked.CompareExchange ensures OnPasswordFound fires exactly once.
 - CancellationToken stops all threads immediately when password is found.
 - MaxThreadCount = CPU cores - 1, minimum 1.
+
+v0.6 | Added MainForm
+- Full GUI layout with dark theme
+- Panels for Generator, Cracker, Result, Performance
+- Rounded progress bar, custom colours
+- Start/Stop controls, progress display, elapsed time
