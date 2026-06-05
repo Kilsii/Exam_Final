@@ -33,3 +33,13 @@ v0.4 | Added PerformanceLogger
 - LogSingleThread() and LogMultiThread() store elapsed milliseconds.
 - GetReport() generates a formatted comparison report with speedup ratio.
 - Clear() resets all stored results before each new attack.
+
+v0.5 | Added BruteForceEngine
+- Orchestrates the brute-force attack in both single-thread and multi-thread modes.
+- Loops through lengths 1 to 6.
+- RunSequential() checks every candidate on one thread.
+- RunParallel() divides index space into equal chunks, one Thread per chunk.
+- All threads start simultaneously before any Join() — genuine parallel execution.
+- Interlocked.CompareExchange ensures OnPasswordFound fires exactly once.
+- CancellationToken stops all threads immediately when password is found.
+- MaxThreadCount = CPU cores - 1, minimum 1.
