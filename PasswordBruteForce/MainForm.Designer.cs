@@ -207,7 +207,7 @@ partial class MainForm
         pbProgress = new RoundedProgressBar
         {
             Location = new Point(175, 97),
-            Size = new Size(510, 32),
+            Size = new Size(350, 32),
             Maximum = 10000,
             BackColor = inputBg,
             BarColor = accentGreen,
@@ -272,7 +272,7 @@ partial class MainForm
             Location = new Point(15, 45),
             Size = new Size(690, 22),
             Font = new Font("Segoe UI", 10F, FontStyle.Bold),
-            ForeColor = textLight,
+            ForeColor = accentGreen,
             BackColor = cardBg,
             Visible = false
         };
@@ -295,7 +295,7 @@ partial class MainForm
             ReadOnly = true,
             BackColor = inputBg,
             Font = new Font("Consolas", 13F, FontStyle.Bold),
-            ForeColor = accentGreen,            
+            ForeColor = textLight,            
             TextAlign = HorizontalAlignment.Center,
             BorderStyle = BorderStyle.FixedSingle
         };

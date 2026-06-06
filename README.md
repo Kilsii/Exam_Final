@@ -49,3 +49,10 @@ v0.6 | Added MainForm
 - Panels for Generator, Cracker, Result, Performance
 - Rounded progress bar, custom colours
 - Start/Stop controls, progress display, elapsed time
+
+v0.7 | UI Polish
+- Fixed found password text color to white
+- Fixed Hurray label color to green
+- Reduced progress bar width for more visible progress
+- Added OptimizedDoubleBuffer to RoundedProgressBar to fix flickering
+- Fixed progress bar Maximum reset issue

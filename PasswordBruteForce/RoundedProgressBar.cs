@@ -10,8 +10,9 @@ public class RoundedProgressBar : ProgressBar
     public RoundedProgressBar()
     {
         SetStyle(ControlStyles.UserPaint, true);
+        SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+        SetStyle(ControlStyles.AllPaintingInWmPaint, true);
     }
-
     protected override void OnPaint(PaintEventArgs e)
     {
         var rect = new Rectangle(0, 0, Width, Height);
