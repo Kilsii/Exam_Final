@@ -56,3 +56,10 @@ v0.7 | UI Polish
 - Reduced progress bar width for more visible progress
 - Added OptimizedDoubleBuffer to RoundedProgressBar to fix flickering
 - Fixed progress bar Maximum reset issue
+
+v1.0 | Final Version
+- All classes implemented and connected
+- Full brute-force attack working with single-thread, multi-thread and compare modes
+- Performance comparison with speedup ratio
+- Dark themed GUI fully functional
+- All assignment requirements met
